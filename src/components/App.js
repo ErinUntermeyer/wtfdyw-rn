@@ -12,14 +12,11 @@ import {
   View,
   Text
 } from 'react-native';
+import Header from './Header'
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>wtfdyw</Text>
-      </View>
-    </View>
+    <Header />
   );
 };
 
@@ -27,17 +24,7 @@ const styles = StyleSheet.create({
   container: {
     // backgroundColor: 'white',
     flex: 1,
-  },
-  sectionContainer: {
-    alignItems: 'center',
-    // backgroundColor: 'gray',
-    marginTop: 100,
-  },
-  sectionTitle: {
-    fontSize: 34,
-    fontWeight: '600',
-    color: 'black',
-  },
+  }
 });
 
 export default App;
