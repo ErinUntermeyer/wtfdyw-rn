@@ -14,3 +14,9 @@ it('renders the subtitle', () => {
   const subtitle = getByText(/what the food do you want/i)
   expect(subtitle).toBeInTheDocument
 })
+
+it('renders the logo', () => {
+  const { getByRole } = render(<Header />)
+  const logo = getByRole('image')
+  expect(logo).toBeInTheDocument
+})
