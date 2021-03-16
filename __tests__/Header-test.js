@@ -8,3 +8,9 @@ it('renders the title', () => {
   const title = getByText(/wtfdyw/i)
   expect(title).toBeInTheDocument
 })
+
+it('renders the subtitle', () => {
+  const { getByText } = render(<Header />)
+  const subtitle = getByText(/what the food do you want/i)
+  expect(subtitle).toBeInTheDocument
+})
