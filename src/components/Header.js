@@ -10,7 +10,11 @@ const Header = () => {
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
-        <Image source={require('../images/cutlery.png')} style={styles.logo}/>
+        <Image
+          accessibilityRole='image'
+          source={require('../images/cutlery.png')}
+          style={styles.logo}
+        />
         <Text style={styles.sectionTitle}>wtfdyw</Text>
       </View>
       <View style={styles.sectionContainer}>
